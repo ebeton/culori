@@ -1,0 +1,22 @@
+{
+    "name": "florin/culori",
+    "description": "Bile pe culori ordonate in grupe de max. 2 culori",
+    "type": "project",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Dumitrescu Florin",
+            "email": "dumitrescu.florin90@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/templating": "^4.2@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Culori\\": "class/"
+        }
+    }
+
+}
