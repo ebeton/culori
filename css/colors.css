@@ -1,0 +1,134 @@
+.colors-test {
+    width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 1080px) {
+    .colors-test {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+}
+
+.colors {
+    position: relative;
+    width: 50%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .colors {
+        width: 100%;
+    }
+}
+
+.colors-info {
+    position: relative;
+    width: 50%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .colors-info {
+        width: 100%;
+    }
+}
+
+.form {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.colors__info {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.colors__info p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.colors__content  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.colors__content .cell {
+    width: calc(94% / 3);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+@media screen and (max-width: 533px) {
+    .colors__content .cell {
+        width: calc(94% / 2);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .colors__content .cell {
+        width: 100%;
+    }
+}
+
+.colors__content .cell .head {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+}
+
+.colors__content .cell .result {
+    width: 100%;
+}
+
+.colors__content .cell .result .result__no,
+.colors__content .cell .result .result__color {
+    display: inline-block;
+}
+
+.colors__content .cell .result .result__no {
+    font-size: 0.85rem;
+}
+
+.colors__content .cell .result .result__color {
+    font-size: 0.9rem;
+}
