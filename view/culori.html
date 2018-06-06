@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Colors play</title>
+    <link href="css/colors.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<section class="colors-test">
+    <div class="colors">
+        <h2>Solution</h2>
+        <label for="get"><b>Give me that "n":</b></label>
+        <input type="text" name="number" value="" class="form__input" id="get" placeholder="Complet with a number!" autofocus="autofocus">
+        <button class="button">Send</button>
+        <br><input type="checkbox" name="php" id="php" checked="checked"> <label for="php"> Uncheck the box for only javascript process! </label>
+        <div class="colors__content" id="result"></div>
+
+    </div>
+    <div class="colors-info">
+        <h2>Enunt problema</h2>
+        <p>Se dau bile de "n" culori (pentru a nu complica prea mult "n" este limitat la 10). In total sunt "n x n" bile ("n" la patrat). Distributia bilelor pe culori este random. Sa se decida daca este posibil si in caz afirmativ sa se prezinte algoritmul general prin care bilele sunt repartizate in "n" grupe de cate "n" bile astfel incat in fiecare grupa sa fie bile de maxim 2 culori diferite (sunt permise si grupe cu o singura culoare) indiferent de distributia initiala.</p>
+    </div>
+    <div class="colors-info" id="solution"></div>
+</section>
+<template id="cell">
+    <div class="cell">
+        <div class="head"></div>
+    </div>
+</template>
+
+<template id="result_elements">
+    <div class="result">
+        <div class="result__no"></div>
+        <div class="result__color"></div>
+    </div>
+</template>
+<script src="js/calls.js"></script>
+<script src="js/show.js"></script>
+
+
+</body>
+</html>
