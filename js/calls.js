@@ -173,6 +173,7 @@ const ColorCall = async (input) => {
         n = input;
         valueBalls = n*n;
         random_getColor(n);
+        arr_all['totalBall_colorArr'] = array_colorsBalls;
         asociateColors_ToGrops(n);
         return arr_all;
 
@@ -217,8 +218,6 @@ function asociate_colors(n) {
     // if( array_colorsBalls.reduce((a, b) => a + b, 0) < valueBalls ) {
     //     array_colorsBalls[first_key] = array_colorsBalls[first_key] + 1;
     // }
-
-    arr_all['totalBall_colorArr'] = array_colorsBalls;
 }
 
 Array.prototype.contains = function(obj) {
@@ -302,5 +301,4 @@ function asociateColors_ToGrops(n) {
     for ( var i = 1; i <= n; i++){
         arr_all['groups']['Group_'+i] = addTo_group(n);
     }
-    //arr_all['groups'] = array_groups;
 }
