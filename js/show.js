@@ -19,7 +19,7 @@ const Afisare = async () => {
     let input = null;
     input = $('.form__input').val();
 
-    if( parseInt(input) && input !== 0) {
+    if( parseInt(input) && parseInt(input) !== 0 && parseInt(input) <= 50 ) {
         let requests = null;
             requests = await ColorCall(input);
         let culori_li = '';
@@ -68,6 +68,7 @@ const Afisare = async () => {
     } else {
         if ( isNaN(input) ) { result.innerText = 'We need to calculate, not writing a letter!' }
         if ( parseInt(input) === 0 ) { result.innerText = 'We need to calculate, ... so inject someting biger than 0!' }
+        if ( parseInt(input) > 50 ) { result.innerText = 'Big one ... so ... Sorry I am restricted to 50 ... so ... insert something lower than 51!' }
     }
 };
 
@@ -76,7 +77,7 @@ const Afisare_php = async () => {
     input = $('.form__input').val();
     const url = 'calls/solution.php?x=' + input;
 
-    if( parseInt(input) && input !== 0) {
+    if( parseInt(input) && parseInt(input) !== 0 && parseInt(input) <= 50 ) {
 
         let response = await fetch(url);
         let requests = await response.json();
@@ -127,6 +128,7 @@ const Afisare_php = async () => {
     } else {
         if ( isNaN(input) ) { result.innerText = 'We need to calculate, not writing a letter!' }
         if ( parseInt(input) === 0 ) { result.innerText = 'We need to calculate, ... so insert something bigger than 0!' }
+        if ( parseInt(input) > 50 ) { result.innerText = 'Big one ... so ... Sorry I am restricted to 50 ... so ... insert something lower than 51!' }
     }
 };
 
