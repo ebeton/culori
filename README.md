@@ -29,3 +29,12 @@ Problema culori
   <p>1. Daca "min" este egal cu "n", atunci se va forma prima grupa din culoarea respectiva;</p>
   <p>2. Daca "min" este mai mic decat "n", atunci se va forma grupa din culoarea respectiva si diferenta de (n-min), se va adauga din "max" (max - (n-min)) pentru formarea grupei;</p>
 
+<p><b>Grupa 1</b></p>
+<p>1 bile - de culoare: #8b008b</p>
+<p>3 bile - de culoare: #ff7f50</p>
+<p><b>Grupa 2</b></p>
+<p>4 bile - de culoare: #faf0e6</p>
+<p><b>Grupa 3</b></p>
+<p>4 bile - de culoare: #d2691e</p>
+<p><b>Grupa 4</b></p>
+<p>4 bile - de culoare: #ff7f50</p>
